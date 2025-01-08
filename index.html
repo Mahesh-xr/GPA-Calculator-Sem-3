@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIT GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>SEMESTER 3 GPA CALCULATOR</h1>
+        </div>
+        <div class="department">
+            <p>Please select your department:</p>
+            <select id="department" name="department">
+                <option value="choose">choose</option>
+                <option value="cse">CSE</option>
+                <option value="csbs">CSBS</option>
+                <option value="cce">CCE</option>
+                <option value="aids">AIDS</option>
+                <option value="aiml">AIML</option>
+                <option value="ece">ECE</option>
+                <option value="vlsi">VLSI</option>
+                <option value="mech">MECH</option>
+            </select>
+        </div>
+
+        <div class="subjects-container">
+            <h2>Subject Grade Selection</h2>
+           
+        </div>
+        <button id="calculate-btn" class="btn">Calculate GPA</button>
+        <div id="result"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

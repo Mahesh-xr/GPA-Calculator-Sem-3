@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  button {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  button:hover {
+    background: #0056b3;
+  }
+  #result {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #007bff;
+  }
+  
