@@ -117,7 +117,7 @@ function showSubjects(dept){
             gradesArray.push(parseInt(selectedGrade)); // Add to grades array
         } else {
             // If no grade is selected, show an alert
-            alert(`Please select a grade for subject ${i + 1}`);
+            alert(`Please select a grade for  ${subjects[i]}`);
             return;
         }
     }
@@ -134,6 +134,7 @@ $('#calculate-btn').click(function () {
     var scored_credits = fetchGrades(subjects.length);
     let total_credits = credits.reduce((a, b) => a + b, 0);
     var total_credits_points = 0;
+    console.log('scored credits'+scored_credits)
     for(var i=0;i<subjects.length;i++){
         total_credits_points += scored_credits[i] * credits[i]
     }
