@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gradient-background">
+            
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="image-container col-10 col-sm-8 col-lg-6">
+                <img src="images/rit logo.jpg" class="d-block mx-lg-auto img-fluid img" alt="rit logo" loading="lazy">
+              </div>
+              <div class="col-lg-6 title-container">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Grade-o-Meter</h1>
+                <p class="lead">Enter your grades, and let the calculator do its thing... whether you like it or not.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">About</button>
+                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Home</button>
+                </div>
+              </div>
+            </div> 
+    </div>
+        <h2>How is GPA Calculated?</h2>
+        <p><strong>Grade Points Mapping:</strong><br>
+            Each grade has a corresponding grade point as per the Anna University regulations:
+        </p>
+        <ul>
+            <li>O (Outstanding): 10</li>
+            <li>A+: 9</li>
+            <li>A: 8</li>
+            <li>B+: 7</li>
+            <li>B: 6</li>
+            <li>RA (Reappear): 0</li>
+            <li>SA (Shortage of Attendance): 0</li>
+            <li>W (Withdrawal): 0</li>
+        </ul>
+        
+        <p><strong>Credit Points:</strong><br>
+            Multiply the grade point (G<sub>i</sub>) for each subject by its credit (C<sub>i</sub>).
+        </p>
+        
+        <p><strong>Total Credits:</strong><br>
+            Add the credits (C<sub>i</sub>) for all the subjects.
+        </p>
+        
+        <p><strong>GPA Calculation:</strong><br>
+            Divide the total credit points (∑ (C<sub>i</sub> × G<sub>i</sub>)) by the total credits (∑ C<sub>i</sub>).
+        </p>
+        
+        <h3>Example:</h3>
+        <p>Assume you have 4 subjects with the following details:</p>
+
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Credits (C<sub>i</sub>)</th>
+                <th>Grade</th>
+                <th>Grade Point (G<sub>i</sub>)</th>
+                <th>Credit Points (C<sub>i</sub> × G<sub>i</sub>)</th>
+            </tr>
+            <tr>
+                <td>S1</td>
+                <td>4</td>
+                <td>A+</td>
+                <td>9</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td>S2</td>
+                <td>3</td>
+                <td>A</td>
+                <td>8</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>S3</td>
+                <td>3</td>
+                <td>B+</td>
+                <td>7</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>S4</td>
+                <td>2</td>
+                <td>O</td>
+                <td>10</td>
+                <td>20</td>
+            </tr>
+        </table>
+
+        <p><strong>Total Credit Points:</strong> 36 + 24 + 21 + 20 = 101</p>
+        <p><strong>Total Credits:</strong> 4 + 3 + 3 + 2 = 12</p>
+        <p><strong>GPA = </strong><span style="font-weight: bold;">101 / 12 = 8.42</span></p>
+        <div id="note-div">
+            <strong>NOTE:</strong>
+        <ol>
+            <li><p>CGPA calculation is simple, add your all SEMESTER GPA and divide them by Total semesters</p>
+            </li>
+            <li><p>GPA Calculation logic is already mentioned</p> </li>
+            <li><p>Calculated GPA is not 100% exact but close enough to exact and it may differ because we are autonomous</p></li>
+        </ol>
+        </div>
+        
+    </div>
+</body>
+</html>
