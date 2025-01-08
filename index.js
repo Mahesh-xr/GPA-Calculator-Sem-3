@@ -43,10 +43,9 @@ function showSubjects(dept){
     switch(dept) {
         case 'cse':
           console.log("Department Selected: Computer Science and Engineering");
-          subjects = ['discreate maths', 'dpco', 'ai', 'ds', 'oops','ess', 'lab1', 'lab2', 'lab3']
+          subjects = ['Discrete Mathematics', 'Digital Principles and Computer Organization', 'Artificial Intellegence', 'Data Structures', 'Object Oriented Programmings','Environmental Science and Sustainability', 'OOPS Lab', 'DPCO Lab', 'DS Lab']
           credits = [4, 3, 3, 3, 3, 2, 1, 1, 1]
           addSubjects(subjects);
-
           break;
         case 'csbs':
           console.log("Department Selected: Computer Science and Business Systems");
@@ -57,20 +56,21 @@ function showSubjects(dept){
         case 'cce':
           console.log("Department Selected:  CCE");
           // Perform your actions for CCE here
-          subjects=[]
-          credits = [];
+          subjects = ['Signals and System', 'Datastructures and Algorithms', 'Digital Processing and Computer Organisation', 'Object Oriented Programming', 'Discrete Mathematics','DSA Lab', 'OOPS Lab', 'DPCO Lab'];
+          credits = [4, 3, 3, 3, 4,1,1, 1];
           addSubjects(subjects);
           break;
         case 'aids':
           console.log("Department Selected: Artificial Intelligence and Data Science");
           // Perform your actions for AIDS here
-          subjects = [];
-          credits = [];
+          subjects = ['Discrete Mathematics', 'Artificial Intelligence', 'Database Management system', 'Object oriented Programming', 'Digital Principles and Computer Organization', 'AI Lab', 'DBMS Lab', 'OOPS Lab', 'DPCO Lab'];
+          credits = [4,3,3,3,4,1,1,1,4];
           addSubjects(subjects);
           break;
         case 'aiml':
           console.log("Department Selected: Artificial Intelligence and Machine Learning");
           // Perform your actions for AIML here
+          
           subjects = [];
           credits = [];
           addSubjects(subjects);
@@ -85,7 +85,7 @@ function showSubjects(dept){
         case 'vlsi':
           console.log("Department Selected: VLSI Design");
           // Perform your actions for VLSI here
-          subjects = [];
+          subjects=[]
           credits = [];
           addSubjects(subjects);
           break;
