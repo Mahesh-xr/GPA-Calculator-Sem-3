@@ -7,7 +7,7 @@ body {
   }
   .gradient-background {
     background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
-    background-size: 180% 180%;
+    background-size: 200% 200%;
     animation: gradient-animation 12s ease infinite;
   }
   
@@ -23,7 +23,7 @@ body {
     }
   }
   .container{
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 20px;
     background: #fff;
@@ -42,15 +42,7 @@ body {
     margin-bottom: 5px;
   }
 
-  button {
-    display: inline-block;
-    padding: 10px 15px;
-    color: #fff;
-    background: #007bff;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-  }
+ 
   button:hover {
     background: #0056b3;
   }
@@ -70,7 +62,7 @@ body {
   color:transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: whitesmoke;
-padding-left: 25%;  
+  padding-left: 25%;  
 }
 h2 {
   text-align: center;
@@ -100,4 +92,149 @@ td {
   margin: auto;
   text-align: start;
   padding: 20px;
+}
+.lead{
+  width: 380px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  margin: auto;
+  font-family: "Merriweather Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 505;
+  font-style: normal;
+  color:whitesmoke;
+}
+  
+
+.hero-btn{
+  margin-left: 150px;
+}
+
+
+h3 {
+  font-size: 1.5rem;
+  color: #4A90E2;
+  margin-bottom: 15px;
+  text-align: center;
+  animation: fadeInText 1.5s ease-out;
+}
+
+.subject {
+  margin-bottom: 25px;
+}
+
+/* Labels and Inputs */
+label {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeInLabel 1.5s ease-out forwards;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  accent-color: #4A90E2;
+}
+
+div {
+  margin-top: 5px;
+}
+
+/* Grade radio buttons styling */
+.grade-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out 0.5s forwards; /* Delayed appearance */
+}
+
+.grade-options label {
+  background-color: #efefef;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+  position: relative;
+  opacity: 0;
+  animation: fadeInLabel 1.5s ease-out forwards;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.grade-options label:hover {
+  background-color: #d9eaff;
+  transform: scale(1.1);
+}
+
+.grade-options input[type="radio"]:checked + label {
+  background-color: #4A90E2;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLabel {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  .grade-options {
+    flex-direction: column;
+  }
 }
