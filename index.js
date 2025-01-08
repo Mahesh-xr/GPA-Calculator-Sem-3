@@ -50,31 +50,51 @@ function showSubjects(dept){
           break;
         case 'csbs':
           console.log("Department Selected: Computer Science and Business Systems");
-          // Perform your actions for CSBS here
+          subjects = ['Discrete Mathematics', 'Object Oriented Programming', 'Data Structures and Algorithms', 'Fundamentals of Economics and Financial Accounting', 'Digital Principles and Computer Organization', 'OOPS Lab', 'DSA Lab'];
+          credits = [4, 3, 3, 4, 5, 2, 2];
+          addSubjects(subjects);
           break;
         case 'cce':
           console.log("Department Selected:  CCE");
           // Perform your actions for CCE here
+          subjects=[]
+          credits = [];
+          addSubjects(subjects);
           break;
         case 'aids':
           console.log("Department Selected: Artificial Intelligence and Data Science");
           // Perform your actions for AIDS here
+          subjects = [];
+          credits = [];
+          addSubjects(subjects);
           break;
         case 'aiml':
           console.log("Department Selected: Artificial Intelligence and Machine Learning");
           // Perform your actions for AIML here
+          subjects = [];
+          credits = [];
+          addSubjects(subjects);
           break;
         case 'ece':
           console.log("Department Selected: Electronics and Communication Engineering");
           // Perform your actions for ECE here
+          subjects = ['Digital System Design', 'Control System', 'Signals and System', 'Environmental Science and Sustainability', 'Object Oriented Programming', 'OOPS Lab', 'DSD Lab'];
+          credits = [3, 3, 4, 2, 3, 1, 1];
+          addSubjects(subjects);
           break;
         case 'vlsi':
           console.log("Department Selected: VLSI Design");
           // Perform your actions for VLSI here
+          subjects = [];
+          credits = [];
+          addSubjects(subjects);
           break;
         case 'mech':
           console.log("Department Selected: Mechanical Engineering");
           // Perform your actions for MECH here
+          subjects = ['Transforms and Partial Differential Equations', 'Engineering Mechanics', ' Engineering Thermodynamics', ' Fluid Mechanics and Machinery', 'Manufacturing Processes', ' Object Oriented Programming', 'Computer Aided Machine Drawing Laboratory', 'OOPS Lab'];
+          credits = [4, 3, 4, 4, 3, 3, 1, 1];
+          addSubjects(subjects);
           break;
         default:
           console.log("No department selected.");
