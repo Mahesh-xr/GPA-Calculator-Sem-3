@@ -217,13 +217,13 @@ div {
     opacity: 1;
   }
 }
-
-/* Responsive Design */
+/* General Responsive Design */
 @media (max-width: 991px) {
   .container {
-    /* width: 100%; */
+    width: 100%;
     padding: 20px;
   }
+
   #container-head {
     flex-direction: row-reverse !important; /* Maintain the row-reverse layout */
     align-items: center; /* Align items as in larger displays */
@@ -231,29 +231,155 @@ div {
 
   .image-container {
     flex: 0 0 50%; /* Set the image container to take 50% width */
-    max-width: 50%; /* Maintain the large display width */
+    max-width: 50%;
   }
 
   .title-container {
     flex: 0 0 50%; /* Set the title container to take 50% width */
-    max-width: 50%; /* Maintain the large display width */
+    max-width: 50%;
   }
-  #head-buttons{
+
+  #head-buttons {
     display: flex;
     flex-direction: row-reverse;
   }
+
   #head-buttons .btn {
-    margin-bottom: 0; /* Remove added spacing if present on smaller screens */
+    margin-bottom: 0;
   }
 
-
-  
   h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem; /* Slightly increase text size */
   }
-  
+
   .grade-options {
     flex-direction: row;
   }
-
 }
+
+@media (max-width: 768px) {
+  html,
+  body {
+    height: 100%; /* Ensure full height usage on mobile */
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    padding: 15px;
+    width: 100%; /* Make container use full width */
+  }
+
+  /* Title and subtitle */
+  .title {
+    font-size: 2rem; /* Increase title font size */
+    text-align: center;
+  }
+
+  .lead {
+    font-size: 1.2rem; /* Increase subtitle font size */
+    text-align: center;
+  }
+
+  /* Logo adjustments */
+  .image-container img {
+    max-width: 90%; /* Adjust size for better fit */
+    margin: auto;
+    display: block;
+  }
+
+  /* Buttons */
+  .hero-btn .btn {
+    width: 100%; /* Stack buttons vertically */
+    margin-bottom: 10px; /* Add spacing */
+  }
+
+  /* Dropdown */
+  .department select {
+    width: 100%; /* Full-width dropdown */
+    font-size: 1.2rem;
+  }
+
+  /* Subjects container */
+  .subjects-container h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .subject h3 {
+    font-size: 1.5rem; /* Increase subject heading size */
+    text-align: center;
+  }
+
+  .grade-options label {
+    margin: 0 5px;
+    font-size: 1rem; /* Slightly larger labels */
+  }
+
+  /* Result display */
+  #result h4 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 576px) {
+  html,
+  body {
+    height: 100%; /* Full height for mobile view */
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2.2rem; /* Larger title for smaller devices */
+    text-align: center;
+  }
+
+  .lead {
+    font-size: 1.4rem; /* Improve subtitle readability */
+    text-align: center;
+  }
+
+  .image-container img {
+    max-width: 100%; /* Full width image */
+    margin: auto;
+    display: block;
+  }
+
+  .hero-btn .btn {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .department select {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .subjects-container h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .subject h3 {
+    font-size: 1.7rem;
+  }
+
+  .grade-options label {
+    margin: 0 3px;
+    font-size: 1.1rem;
+  }
+
+  #result h4 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+

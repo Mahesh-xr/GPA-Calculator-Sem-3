@@ -78,8 +78,8 @@ function showSubjects(dept){
         case 'ece':
           console.log("Department Selected: Electronics and Communication Engineering");
           // Perform your actions for ECE here
-          subjects = ['Digital System Design', 'Control System', 'Signals and System', 'Environmental Science and Sustainability', 'Object Oriented Programming', 'OOPS Lab', 'DSD Lab'];
-          credits = [3, 3, 4, 2, 3, 1, 1];
+          subjects = ['Digital System Design', 'Control System', 'Signals and System', 'Environmental Science and Sustainability', 'Object Oriented Programming', 'OOPS Lab', 'DSD Lab', 'PCB Design'];
+          credits = [3, 3, 4, 2, 3, 1, 1, 1];
           addSubjects(subjects);
           break;
         case 'vlsi':
