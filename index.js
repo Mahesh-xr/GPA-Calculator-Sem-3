@@ -85,8 +85,8 @@ function showSubjects(dept){
         case 'vlsi':
           console.log("Department Selected: VLSI Design");
           // Perform your actions for VLSI here
-          subjects=[]
-          credits = [];
+          subjects=['Random Process and Linear Algebra', 'Signals and System', 'Digital System Design', 'OOPS', 'Wide Bandgap Devices', 'DSD Lab', 'OOPS Lab']
+          credits = [4, 4, 3, 3, 3, 1, 1, 1];
           addSubjects(subjects);
           break;
         case 'mech':
