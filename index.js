@@ -85,8 +85,8 @@ function showSubjects(dept){
         case 'vlsi':
           console.log("Department Selected: VLSI Design");
           // Perform your actions for VLSI here
-          subjects=['Random Process and Linear Algebra', 'Signals and System', 'Digital System Design', 'OOPS', 'Wide Bandgap Devices', 'DSD Lab', 'OOPS Lab']
-          credits = [4, 4, 3, 3, 3, 1, 1, 1];
+          subjects=['ESS', 'Signals and System', 'Digital System Design', 'OOPS', 'Wide Bandgap Devices', 'DSD Lab', 'OOPS Lab']
+          credits = [2, 4, 3, 3, 3, 1, 1, 1];
           addSubjects(subjects);
           break;
         case 'mech':
@@ -172,6 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Display the updated view count in the span element
   document.getElementById('view-count').textContent = viewCount;
 });
+
 
 
 
