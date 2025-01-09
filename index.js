@@ -43,8 +43,8 @@ function showSubjects(dept){
     switch(dept) {
         case 'cse':
           console.log("Department Selected: Computer Science and Engineering");
-          subjects = ['Discrete Mathematics', 'Digital Principles and Computer Organization', 'Artificial Intellegence', 'Data Structures', 'Object Oriented Programmings','Environmental Science and Sustainability', 'OOPS Lab', 'DPCO Lab', 'DS Lab']
-          credits = [4, 3, 3, 3, 3, 2, 1, 1, 1]
+          subjects = ['Discrete Mathematics', 'Digital Principles and Computer Organization', 'Artificial Intellegence', 'Data Structures', 'Object Oriented Programmings','Environmental Science and Sustainability', 'OOPS Lab', 'Design Thinking Lab', 'DS Lab']
+          credits = [4, 4, 3, 3, 3, 2, 1, 1, 1]
           addSubjects(subjects);
           break;
         case 'csbs':
@@ -152,5 +152,26 @@ department.on('change', function() {
   console.log(selectedValue)
   showSubjects(selectedValue)
 });
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the stored view count from localStorage
+  let viewCount = localStorage.getItem('viewCount');
+
+  // If viewCount is null, initialize it to 0
+  if (viewCount === null) {
+      viewCount = 0;
+  } else {
+      viewCount = parseInt(viewCount);
+  }
+
+  // Increment the view count
+  viewCount++;
+
+  // Update the view count in localStorage
+  localStorage.setItem('viewCount', viewCount);
+
+  // Display the updated view count in the span element
+  document.getElementById('view-count').textContent = viewCount;
+});
+
 
 
