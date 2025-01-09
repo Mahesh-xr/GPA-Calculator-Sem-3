@@ -13,15 +13,15 @@
 <body>
     <div class="container">
         <div class="gradient-background mt-5">
-                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                  <div class="image-container col-10 col-sm-8 col-lg-6">
-                    <img src="images/rit logo.jpg" class="d-block mx-lg-auto img-fluid img" alt="rit logo" loading="lazy">
+                <div id ="container-head" class=" row flex-lg-row-reverse align-items-center g-3 py-5">
+                  <div class="image-container col-6 col-sm-12 col-lg-6">
+                    <img id= 'rit-logo' src="images/rit logo.jpg" class=" img-fluid img" alt="rit logo" loading="lazy">
                   </div>
-                  <div class="col-lg-6 title-container">
+                  <div class="col-lg-6  title-container">
                     <div class="title-text">
                       <h1 class="display-5  title">Grade-o-Meter</h1>
                     <p class="lead">Enter your grades, and let the calculator do its thing... whether you like it or not.</p>
-                    <div>
+                    <div id="head-buttons">
                       <div class="hero-btn d-grid gap-2 d-md-flex justify-content-md-start">
                         <button type="button" class="btn btn-outline-primary btn-lg px-4">About</button>
                         <button type="button" class="btn btn-outline-primary btn-lg px-4">How it works</button>
@@ -50,7 +50,7 @@
 
         <div class="subjects-container">
             <h2>Subject Grade Selection</h2>
-           
+             
         </div>
         <button id="calculate-btn" class="btn">Calculate GPA</button>
         <div id="result"></div>

@@ -14,11 +14,11 @@ function addSubjects(subjects) {
     for (let i = 0; i < subjects.length; i++) {
       let subjectContent = `
         <div class="subject">
-          <h3>${subjects[i]}</h3>
+          <h3>${i+1 +'. ' + subjects[i]}</h3>
   
           <!-- Grade as radio buttons -->
           <label>Grades:</label>
-          <div>
+          <div class='grade-options'>
             <label><input type="radio" name="subject${i}-grade" value="10"> O</label>
             <label><input type="radio" name="subject${i}-grade" value="9"> A+</label>
             <label><input type="radio" name="subject${i}-grade" value="8"> A</label>
