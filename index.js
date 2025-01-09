@@ -49,22 +49,22 @@ function showSubjects(dept){
           break;
         case 'csbs':
           console.log("Department Selected: Computer Science and Business Systems");
-          subjects = ['Discrete Mathematics', 'Object Oriented Programming', 'Data Structures and Algorithms', 'Fundamentals of Economics and Financial Accounting', 'Digital Principles and Computer Organization', 'OOPS Lab', 'DSA Lab'];
-          credits = [4, 3, 3, 4, 5, 2, 2];
+          subjects = ['Discrete Mathematics', 'Object Oriented Programming', 'Data Structures and Algorithms', 'Fundamentals of Economics and Financial Accounting', 'Digital Principles and Computer Organization', 'OOPS Lab', 'DSA Lab', 'Design Thinking lab'];
+          credits = [4, 3, 3, 4, 5, 2, 2, 1];
           addSubjects(subjects);
           break;
         case 'cce':
           console.log("Department Selected:  CCE");
           // Perform your actions for CCE here
-          subjects = ['Signals and System', 'Datastructures and Algorithms', 'Digital Processing and Computer Organisation', 'Object Oriented Programming', 'Discrete Mathematics','DSA Lab', 'OOPS Lab', 'DPCO Lab'];
-          credits = [4, 3, 3, 3, 4,1,1, 1];
+          subjects = ['Signals and System', 'Datastructures and Algorithms', 'Digital Processing and Computer Organisation', 'Object Oriented Programming', 'Discrete Mathematics','DSA Lab', 'OOPS Lab', 'One Credit course'];
+          credits = [4, 3, 3, 3, 4, 1, 1, 1];
           addSubjects(subjects);
           break;
         case 'aids':
           console.log("Department Selected: Artificial Intelligence and Data Science");
           // Perform your actions for AIDS here
-          subjects = ['Discrete Mathematics', 'Artificial Intelligence', 'Database Management system', 'Object oriented Programming', 'Digital Principles and Computer Organization', 'AI Lab', 'DBMS Lab', 'OOPS Lab', 'DPCO Lab'];
-          credits = [4,3,3,3,4,1,1,1,4];
+          subjects = ['Discrete Mathematics', 'Artificial Intelligence', 'Database Management system', 'Object oriented Programming', 'Digital Principles and Computer Organization', 'AI Lab', 'DBMS Lab', 'OOPS Lab', 'One Credit Course'];
+          credits = [4,3,3,3,4,1,1,1,1];
           addSubjects(subjects);
           break;
         case 'aiml':
