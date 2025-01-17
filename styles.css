@@ -30,7 +30,6 @@ body {
   }
  .img{
   padding: 0px 50px;
-  border-radius: 12%;
   width: 100%;
   height: 200px;
   
@@ -218,10 +217,25 @@ div {
   }
 }
 /* General Responsive Design */
-@media (max-width: 993px) {
-  .container {
+@media (max-width: 821px) {
+ html,body{
+  width: 100%;
+ }
+  img{
+    border-radius: 0px;
     width: 100%;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    max-width: 100%; /* Ensures no limit applies */
+
+    border: 1px solid black;
+    margin-right: 20px;
+  }
+  .gradient-background{
+    /* height: 100%; */
+    width: 100%;
   }
 
   #container-head {
@@ -257,7 +271,7 @@ div {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 7px) {
   html,
   body {
     height: 100%; /* Ensure full height usage on mobile */
@@ -325,7 +339,7 @@ div {
 }
 
 /* Extra Small Devices */
-@media (max-width: 576px) {
+@media (max-width: 5px) {
   html,
   body {
     height: 100%; /* Full height for mobile view */
