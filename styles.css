@@ -229,9 +229,6 @@ div {
   }
   .container {
     max-width: 100%; /* Ensures no limit applies */
-
-    border: 1px solid black;
-    margin-right: 20px;
   }
   .gradient-background{
     /* height: 100%; */
