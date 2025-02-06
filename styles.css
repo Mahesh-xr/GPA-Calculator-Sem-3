@@ -218,6 +218,36 @@ div {
 }
 /* General Responsive Design */
 @media (max-width: 821px) {
+ .container{
+  box-sizing: content-box;
+ }
+ .title{
+  font-size: 1.5rem;
+  width: max-content;
+ }
+ .lead{
+  text-align: center;
+  font-size: .8rem;
+  width: 20ch;
+ }
+ #rit-logo{
+  height: 20vh;
+  width: 80%;
+ }
+ .hero-btn {
+  display: flex;
+  flex-direction: column;
+  gap:10px
+ }
+ .hero-btn button{
+  padding: 1px;
+  font-size: .6rem;
+  width: max-content;
+
+ }
+
+}
+@media (max-width: 821px) {
  html,body{
   width: 100%;
  }
